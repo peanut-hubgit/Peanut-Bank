@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --peanut-primary: #78350f;
+    --peanut-primary-container: #fed7aa;
+    --peanut-surface: #fdf8f4;
+    --peanut-surface-container: #f5ebe1;
+    --peanut-on-surface: #2b1708;
+    --font-scale: 1;
+  }
+
+  html.dark {
+    --peanut-primary: #f59e0b;
+    --peanut-primary-container: #451a03;
+    --peanut-surface: #140d07;
+    --peanut-surface-container: #1f140c;
+    --peanut-on-surface: #fde8d7;
+  }
+
+  html.deep-black {
+    --peanut-surface: #000000;
+    --peanut-surface-container: #0d0a07;
+    --peanut-on-surface: #ffffff;
+  }
+
+  html.high-contrast {
+    filter: contrast(115%);
+  }
+}
+
+/* Dynamic font scaling */
+html[data-font-size="small"] {
+  font-size: 14px;
+}
+
+html[data-font-size="medium"] {
+  font-size: 16px;
+}
+
+html[data-font-size="large"] {
+  font-size: 18px;
+}
+
+html[data-font-size="xlarge"] {
+  font-size: 20px;
+}
+
+/* Material Design 3 Ripples & Smooth Curves */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hide scrollbars for clean mobile/applet feel while allowing scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom peanut glass & glow effects */
+.peanut-gradient {
+  background: linear-gradient(135deg, #78350f 0%, #9a3412 50%, #b45309 100%);
+}
+
+.peanut-card-gradient {
+  background: linear-gradient(135deg, #2c1a0e 0%, #1c1008 60%, #3e2211 100%);
+}
+
+.peanut-gold-gradient {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #92400e 100%);
+}

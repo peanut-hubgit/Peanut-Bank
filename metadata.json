@@ -1,0 +1,6 @@
+{
+  "name": "Peanut Bank",
+  "description": "Banco digital completo com transferências PIX instantâneas, gestão de investimentos, criptografia avançada, autenticação biométrica, Material Design 3 e Painel Administrativo Beta (PAFB).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
